@@ -1,0 +1,259 @@
+body {
+    width: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F2F2F2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding:0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.nbar {
+    width: 100%;
+    height: 64px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+#title {
+    align-self: center;
+    margin: 0;
+    font-size: 24px;
+    line-height: 28.13px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#links {
+    height: 64px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    line-height: 21.09px;
+    font-weight: 400;
+}
+
+.lispace {
+    margin-right: 22px;
+}
+
+#demobtn {
+    background: white;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 21.56px;
+    font-weight: 400;
+    padding-left: 16.5px;
+    padding-right: 16.5px;
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    color: black;
+    
+}
+
+#demobtn:hover {
+    background: rgb(240, 240, 240);
+
+}
+
+#linkanimation {
+    text-decoration: none;
+    text-decoration-color: none;
+    color: black;
+    position: relative;
+  }
+  #linkanimation::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+    transform: scale(1,1);
+    transition: background-color .5s ease-in-out;
+    bottom: 0px;
+  }
+  #linkanimation:hover::before {
+    animation: link ease 1s 1 300ms;
+    transform-origin: right;  
+  }
+  @keyframes link {
+    50%{
+      transform: scaleX(0);
+    }
+    50.1% {
+      transform: translateX(-100%) scalex(0);   
+    }
+    100% {
+      transform: translateX(-100%) scalex(-1);
+    }
+  }
+
+#s1 {
+    background: black;
+    width: 100%;
+    height: 850px;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    overflow: visible;
+}
+
+#text1 {
+    
+    text-align: center;
+    align-self: center;
+    width: 85%;
+    height: 113px;
+    margin-top: 161px;
+}
+
+#maintext {
+    font-size: 48px;
+    line-height: 56.25px;
+    font-weight: 500;
+}
+
+#subtext {
+    font-size: 25px;
+    line-height: 35.16px;
+    font-weight: 400;
+}
+
+#video {
+    width: 800px;
+    height: 480px !important; 
+    background: white;
+    align-self: center;
+    display: flex;
+    margin-top: 58px;
+    color: black
+}
+
+.s2 {
+    width: auto;
+    height: 1500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#reservetitle { 
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 46.88px;
+}
+
+.calendly {
+    width: 1043;
+    height: 680px;
+    background: black;
+}
+
+.partners {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ptitle {
+    margin-bottom: 29px;
+}
+
+#parttitle {
+    font-size: 24px;
+    font-weight: 450;
+    line-height: 33.75px;
+
+}
+
+.logos {
+    display: flex;
+    width: 685px;
+    justify-content: space-evenly;
+}
+
+.logo {
+    width: 80px;
+    height: 75px;
+    border-radius: 50%;
+    background: black;
+}
+
+#s3 {
+height: 1382px;
+width: 100%;
+background: white;
+display: flex;
+flex-direction: column;
+}
+
+#ustitle {
+    display: flex;
+    width: 100%;
+    height: 217px;
+    justify-content: center;
+    align-items: center;
+}
+
+#us {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-around;
+}
+
+#pic {
+    width: 50%;
+    height: 916px; 
+    /* NEED TO FIX WIT JS !!!! */
+    background: black;
+}
+
+.ustextwrap {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    
+    
+    
+}
+
+.wrap2 {
+    margin: 12.5%;
+}
+
+.ustexttitle {
+    font-size: 33px;;
+    
+}
+
+.ustext {
+    font-size: 20px;
+}
